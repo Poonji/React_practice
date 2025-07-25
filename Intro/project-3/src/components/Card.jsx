@@ -4,7 +4,7 @@ const Card = (props) => {
   return (
     <div>
        {props.children}{/*to access the 
-       children of the card name*/}
+       children of the component card*/}
     </div>
   )
 }
