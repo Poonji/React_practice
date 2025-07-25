@@ -1,14 +1,23 @@
-import { useState } from 'react'
 import './App.css'
-import Card from './components/Card'
 
 function App() {
-  const[name, setName]=useState('');
 
+  function handleClick(){
+    alert("I am Clicked")
+  }
+
+  function hoverClick()
+  {
+    alert("Mouse has hovered")
+  }
   return (
     <div>
-      < Card name={name} setName={setName}/>
-      <h1>I am inside parent and the value is {name}</h1>
+      <p onMouseOver={hoverClick} style={{color:"red"}}>
+        i am a paragraph
+      </p>
+    <button onClick={handleClick}>
+      Click Me
+    </button>
     </div>
   )
 }
